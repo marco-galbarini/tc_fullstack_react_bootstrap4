@@ -5,7 +5,7 @@
 
 .row-content {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 0 50px 0;
   border-bottom: 1px ridge;
   min-height: 400px;
 }
@@ -13,11 +13,11 @@
 .footer {
   background-color: #d1c4e9;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .jumbotron {
-  padding: 70px 30px;
+  padding: 70px 30px 70px 30px;
   margin: 0 auto;
   background: #9575cd;
   color: floralwhite;
@@ -27,4 +27,13 @@
   font-size: 80%;
   margin: 0;
   color: #0f0f0f;
+}
+
+body {
+  padding: 50px 0 0 0;
+  z-index: 0;
+}
+
+.navbar-dark {
+  background-color: #512da8;
 }
