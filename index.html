@@ -108,7 +108,7 @@
                 <div class="col-12 col-sm-3">
                     <div class="row justify-content-center">
                         <div class="col-8 col-sm-12">
-                            <a role="button" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom" class="btn btn-warning btn-block" href="#reserveform">
+                            <a role="button" data-toggle="modal" data-target="#reserveform" class="btn btn-warning btn-block">
                                 Reserve Table
                             </a>
                         </div>
@@ -209,10 +209,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FIXME - REMOVE THIS AUX BUTTON FOR MODAL -->
-        <a href="#" data-toggle="modal" data-target="#reserveform">Open modal</a>
-
         <div id="reserveform" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                 <!-- Modal content-->
@@ -339,11 +335,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 
 </body>
 
