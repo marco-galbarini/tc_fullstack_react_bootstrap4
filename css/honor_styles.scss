@@ -1,0 +1,68 @@
+$color-title-black: #1f1f1f;
+$color-title-blue: #34abeb;
+$color-background-card: #9dbcf5;
+$color-background-card-important: #f59d9d;
+$color-background-card-first: #b0c8f5;
+$color-text-first-card: #6b6b6b;
+$color-text-checkmark: rgba(255, 255, 255, 0.4);
+
+.title {
+  margin: 50px;
+
+  h1 {
+    color: $color-title-black;
+    font-weight: bold;
+    + h1 {
+      color: $color-title-blue;
+    }
+  }
+}
+
+.container {
+  margin: 40px auto;
+
+  .row {
+    margin-bottom: 20px;
+    div {
+      .card {
+        background-color: $color-background-card;
+        height: 120px;
+        border-radius: 0;
+
+        &.important {
+          background-color: $color-background-card-important;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 15px;
+        }
+
+        .fa {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+
+          &.fa-check {
+            color: $color-text-checkmark;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      div {
+        &:nth-child(1) {
+          .card {
+            background-color: $color-background-card-first;
+
+            p {
+              color: $color-text-first-card;
+            }
+          }
+        }
+      }
+    }
+  }
+}

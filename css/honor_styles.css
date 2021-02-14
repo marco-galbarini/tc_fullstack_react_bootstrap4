@@ -1,0 +1,32 @@
+.title {
+  margin: 50px; }
+  .title h1 {
+    color: #1f1f1f;
+    font-weight: bold; }
+    .title h1 + h1 {
+      color: #34abeb; }
+
+.container {
+  margin: 40px auto; }
+  .container .row {
+    margin-bottom: 20px; }
+    .container .row div .card {
+      background-color: #9dbcf5;
+      height: 120px;
+      border-radius: 0; }
+      .container .row div .card.important {
+        background-color: #f59d9d; }
+      .container .row div .card p {
+        font-size: 20px;
+        margin: 15px; }
+      .container .row div .card .fa {
+        position: absolute;
+        right: 10px;
+        bottom: 10px; }
+        .container .row div .card .fa.fa-check {
+          color: rgba(255, 255, 255, 0.4);
+          font-size: 35px; }
+    .container .row:nth-child(1) div:nth-child(1) .card {
+      background-color: #b0c8f5; }
+      .container .row:nth-child(1) div:nth-child(1) .card p {
+        color: #6b6b6b; }
